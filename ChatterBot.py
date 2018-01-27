@@ -7,10 +7,10 @@ is_prod = os.environ.get('IS_HEROKU', None)
 
 if is_prod:
     #here goes all your heroku config
-    consumer_key = os.environ.get('twitter_consumer_key', None)
-    consumer_secret = os.environ.get('twitter_consumer_secret', None)
-    access_token = os.environ.get('twitter_access_token', None)
-    access_token_secret = os.environ.get('twitter_access_token_secret', None)
+    consumer_key = os.environ.get('twitter_consumer_api_key', None)
+    consumer_secret = os.environ.get('twitter_consumer_secret_api_key', None)
+    access_token = os.environ.get('twitter_access_token_api_key', None)
+    access_token_secret = os.environ.get('twitter_access_token_secret_api_key', None)
     print('production')
 else:
     print('development')
